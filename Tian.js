@@ -28,3 +28,8 @@ function generateLandingPageButton() {
 }
 
 generateLandingPageButton();
+
+$("#contact-button").click(() => {
+  $(".landingPage").hide();
+  $("#main-page").removeClass("visuallyhidden");
+});
