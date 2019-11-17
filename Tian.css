@@ -247,7 +247,7 @@ canvas {
   overflow: hidden;
 }
 
-#main-page {
+.main-page {
   background-color: black;
   height: 100vh;
 }
@@ -259,7 +259,7 @@ canvas {
 }
 
 #contact-heading {
-  font-size: 70px;
+  font-size: 50px;
   margin: auto;
   display: flex;
   margin-bottom: 50px;
@@ -268,23 +268,23 @@ canvas {
 }
 
 #contact-content {
-  line-height: 40px;
+  line-height: 30px;
   position: relative;
   display: grid;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 10%;
   color: white;
   font-size: 30px;
 }
 
 #simpleDetail {
-  line-height: 40px;
+  line-height: 20px;
   position: relative;
   display: grid;
   margin: auto;
 
   color: white;
-  font-size: 30px;
+  font-size: 20px;
   background-image: linear-gradient(147deg, #6e6e6e 0%, #d1d1d1 74%);
   color: white;
   background-position: center;
@@ -294,12 +294,57 @@ canvas {
   -webkit-text-fill-color: transparent;
   text-align: center;
 }
+#simpleDetail p {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
 #feedback-button {
   color: white;
 }
 
 #contact-form {
-  margin-top: 50px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.close-button {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  padding: 5px 10px;
+
+  background-color: transparent;
+  color: rgb(92, 92, 92);
+  border: 3px solid rgb(92, 92, 92);
+  font-size: 2em;
+}
+.close-button:hover {
+  border: 3px solid white;
+  color: white;
+  transition: all 0.5s;
+}
+
+#videoBG {
+  position: fixed;
+  z-index: 0;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  #videoBG {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  #videoBG {
+    width: auto;
+    height: 100%;
+  }
+}
+
+.card {
+  background-color: rgba(245, 245, 245, 0.4);
 }
 /* .blurred-box {
   position: absolute;

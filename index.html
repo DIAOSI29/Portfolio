@@ -41,7 +41,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </head>
   <body>
-    <div class="landingPage">
+    <div class="landingPage" id="landingPage">
       <div id="large-header" class="large-header">
         <canvas id="demo-canvas"> </canvas>
         <div class="wrapper container-fluid">
@@ -77,26 +77,160 @@
       </div>
     </div>
 
-    <div id="main-page" class="main-page visuallyhidden">
+    <div id="main-page-contact" class="main-page visuallyhidden">
       <div id="contact-page" class="container-fluid d-flex">
+        <a href="#landingPage" id="closeContactSection" class="close-button"
+          ><i class="fas fa-angle-double-left"></i
+        ></a>
         <div id="contact-content">
           <div id="simpleDetail">
-          <h2 id="contact-heading" class="mx-auto">contact</h2>
-          <i class="fas fa-envelope fa-30px"></i>
-          <p>qintian29@gmail.com</p>
-          <i class="fas fa-mobile-alt"></i>
-          <p>0435420918</p>
-          <i class="fab fa-github"></i> <p></p>https://github.com/DIAOSI29</p>
-        </div>
+            <h2 id="contact-heading" class="mx-auto">CONTACT</h2>
+            <i class="fas fa-envelope fa-30px"></i>
+            <p>qintian29@gmail.com</p>
+            <i class="fas fa-mobile-alt"></i>
+            <p>0435420918</p>
+            <i class="fab fa-github"></i>
+            <p>https://github.com/DIAOSI29</p>
+          </div>
 
           <form id="contact-form">
-              
-              <div class="form-group">
-                  <label for="feedback" class="text-primary">Please Leave Your Feedback Here</label>
-                  <textarea class="form-control" id="feedback" rows="3"></textarea>
-                </div>
-                <button id="feedback-button" type="submit" class="btn btn-primary">Submit</button>
-            </form>
+            <div class="form-group">
+              <label for="feedback" class="text-light"
+                >Please Leave Your Feedback</label
+              >
+              <textarea class="form-control" id="feedback" rows="3"></textarea>
+            </div>
+            <button id="feedback-button" type="submit" class="btn btn-light">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <video
+      id="videoBG"
+      poster=""
+      src="./images/Particles - 323.mp4"
+      autoplay
+      muted
+      loop
+    >
+      <source id="video" src="" type="video/mp4" />
+    </video>
+    <div id="main-page-porfolio" class="main-page visuallyhidden">
+      <div class="container-fluid flex-fill">
+        <div class="row justify-content-start">
+          <div
+            class="card col-6 col-sm-3 col-md-3 col-lg-3 col-xl-2 mr-4 mt-5 ml-4 mb-5"
+            style="border: 3px solid #a7a7a7; border-radius: 15px;background-color: rgba(245, 245, 245, 0.3)"
+          >
+            <img
+              src="./assetsBS/images/animal.jpg"
+              class="card-img-top mt-3"
+              alt="..."
+            />
+            <div class="card-body">
+              <a href="#" class="btn btn-light w-100">Boostrap</a>
+            </div>
+          </div>
+
+          <div
+            class="card  col-6 col-sm-3 col-md-3 col-lg-3 col-xl-2 mr-4 mt-5 ml-4 mb-5"
+            style="border: 3px solid #a7a7a7; border-radius: 15px;background-color: rgba(245, 245, 245, 0.3)"
+          >
+            <img
+              src="./assetsBS/images/car.jpg"
+              class="card-img-top mt-3"
+              alt="..."
+            />
+            <div class="card-body">
+              <a href="#" class="btn btn-light w-100">Unit-4-Game</a>
+            </div>
+          </div>
+
+          <div
+            class="card col-6 col-sm-3 col-md-3 col-lg-3 col-xl-2 mr-4 mt-5 ml-4 mb-5"
+            style="border: 3px solid #a7a7a7; border-radius: 15px;background-color: rgba(245, 245, 245, 0.3)"
+          >
+            <img
+              src="./assetsBS/images/food.jpg"
+              class="card-img-top mt-3"
+              alt="..."
+            />
+            <div class="card-body">
+              <a href="#" class="btn btn-light w-100">Word Guess Game</a>
+            </div>
+          </div>
+
+          <div
+            class="card  col-6 col-sm-3 col-md-3 col-lg-3 col-xl-2 mr-4 mt-5 ml-4 mb-5"
+            style="border: 3px solid #a7a7a7; border-radius: 15px;background-color: rgba(245, 245, 245, 0.3)"
+          >
+            <img
+              src="./assetsBS/images/gaming.jpg"
+              class="card-img-top mt-3"
+              alt="..."
+            />
+            <div class="card-body">
+              <a href="#" class="btn btn-light w-100">Trivia Game</a>
+            </div>
+          </div>
+
+          <div
+            class="card  col-6 col-sm-3 col-md-3 col-lg-3 col-xl-2 mr-4 mt-5 ml-4 mb-5"
+            style="border: 3px solid #a7a7a7; border-radius: 15px;background-color: rgba(245, 245, 245, 0.3)"
+          >
+            <img
+              src="./assetsBS/images/holiday.jpg"
+              class="card-img-top mt-3"
+              alt="..."
+            />
+            <div class="card-body">
+              <a href="#" class="btn btn-light w-100">Gif Tastic</a>
+            </div>
+          </div>
+
+          <div
+            class="card col-6 col-sm-3 col-md-3 col-lg-3 col-xl-2 mr-4 mt-5 ml-4 mb-5"
+            style="border: 3px solid #a7a7a7; border-radius: 15px;background-color: rgba(245, 245, 245, 0.3)"
+          >
+            <img
+              src="./assetsBS/images/Nature.jpg"
+              class="card-img-top mt-3"
+              alt="..."
+            />
+            <div class="card-body">
+              <a href="#" class="btn btn-light w-100">Train Scheduler</a>
+            </div>
+          </div>
+
+          <div
+            class="card col-6 col-sm-3 col-md-3 col-lg-3 col-xl-2 mr-4 mt-5 ml-4 mb-5"
+            style="border: 3px solid #a7a7a7; border-radius: 15px;background-color: rgba(245, 245, 245, 0.3)"
+          >
+            <img
+              src="./assetsBS/images/working.jpg"
+              class="card-img-top mt-3"
+              alt="..."
+            />
+            <div class="card-body">
+              <a href="#" class="btn btn-light w-100">Pomodoro App</a>
+            </div>
+          </div>
+
+          <div
+            class="card  col-6 col-sm-3 col-md-3 col-lg-3 col-xl-2 mr-4 mt-5 ml-4 mb-5"
+            style="border: 3px solid #a7a7a7; border-radius: 15px;background-color: rgba(245, 245, 245, 0.3)"
+          >
+            <img
+              src="./assetsBS/images/graphicart.jpg"
+              class="card-img-top mt-3"
+              alt="..."
+            />
+            <div class="card-body">
+              <a href="#" class="btn btn-light w-100">Graphic Art</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
