@@ -13,14 +13,17 @@ html {
 
   width: 100%;
   display: grid;
-  position: absolute;
+  position: relative;
+  min-height: 100%;
+  top: 0%;
+  left: 0%;
   color: #fff;
   /* background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo-bg.jpg"); */
   background: linear-gradient(-45deg, #000000, #202020, #0f0f0f);
   background-size: 500% 600%;
   animation: gradientBG 10s ease infinite;
   height: auto;
-  /* overflow-y: scroll; */
+  overflow-y: unset;
 }
 
 @keyframes gradientBG {
@@ -57,7 +60,7 @@ canvas {
 
 #personal-intro {
   /* display: block; */
-  margin-top: 10px;
+  margin-top: 30px;
   position: relative;
 
   padding: 0;
@@ -108,15 +111,17 @@ canvas {
 }
 
 .button-wrapper {
-  display: block;
+  /* display: block; */
   position: relative;
+  align-self: center;
   top: 50%;
+  margin-bottom: 30px;
 }
 .optionButton {
   list-style-type: none;
   line-height: 70px;
   color: white;
-  margin-top: 10px;
+  margin-top: 20px;
   font-size: 15px;
   text-align: center;
 
@@ -132,12 +137,10 @@ canvas {
   /* margin: 10px; */
   display: block;
 }
-/* #buttons {
-  display: grid;
-  place-items: center;
-  grid-template-columns: auto;
-  width: 100%;
-} */
+#buttons {
+  margin: auto;
+  padding: 0;
+}
 .button-row {
   width: 100%;
   position: relative;
@@ -204,6 +207,31 @@ canvas {
   box-shadow: 0 0 5px white;
   text-shadow: 0 0 5px white;
   text-decoration: none;
+}
+
+.portfolio {
+  position: relative;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  bottom: 50px;
+  background: none;
+}
+#contact-button,
+#portfolio-button {
+  background: transparent;
+  margin: auto;
+  color: white;
+  padding: 10px 20px;
+}
+
+#contact-button:hover,
+#portfolio-button:hover {
+  background: white;
+  margin: auto;
+  color: black;
+  padding: 10px 20px;
+  transition: all 0.5s;
 }
 
 .visuallyhidden {
