@@ -45,3 +45,8 @@ $(".close-button").click(() => {
   $("#landingPage").show();
   $(".main-page").addClass("visuallyhidden");
 });
+
+$("#feedback-button").click(() => {
+  let feedback = $("#feedback").text();
+  console.log(feedback);
+});
