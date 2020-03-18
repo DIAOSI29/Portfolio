@@ -5,13 +5,16 @@ let skillset = [
   "Jquery",
   "API",
   "Firebase",
+  "Handle-bar",
   "MongoDB",
   "Express",
   "React",
   "Node JS",
   "Heroku",
-  "SQL",
-  "GIT"
+  "MYSQL",
+  "GIT",
+  "Sequelize",
+  "Mongoose"
 ];
 
 function generateLandingPageButton() {
