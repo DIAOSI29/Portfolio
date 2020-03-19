@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "tian qin",
+  "main": "Tian.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DIAOSI29/Portfolio.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "tian qin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DIAOSI29/Portfolio/issues"
+  },
+  "homepage": "https://github.com/DIAOSI29/Portfolio#readme"
+}
